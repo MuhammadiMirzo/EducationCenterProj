@@ -9,7 +9,6 @@ namespace Infrastructure.Services.CourseServices;
 public class CourseService:ICourseService
 {
     private readonly AplicationDbContext _dbContext;
-    public int MyProperty { get; set; }
     public CourseService(AplicationDbContext dbContext)
     {
         _dbContext = dbContext;
