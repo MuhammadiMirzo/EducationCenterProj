@@ -46,6 +46,7 @@ public class CourseService:ICourseService
         var allcour = courses.Select(course=>new GetAllCourseDto
         {
             CourseStatus = course.CourseStatus,
+            Name = course.Name,
             GetAllGroups = course.Groups
                             .Where(x=>x.CourseId==course.Id)
                             .Select(group=>new GetAllGroupDto
